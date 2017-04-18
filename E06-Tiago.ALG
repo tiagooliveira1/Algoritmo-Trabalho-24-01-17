@@ -2,7 +2,7 @@ Algoritmo "semnome"
 // Disciplina   : [Linguagem e Lógica de Programação] 
 // Autor(a)    : Tiago Oliveira
 Var
-  varA, varB, aux: Real
+  tempCelsius, tempFarenheit: Real
 Inicio
 
 escreval("Informe o valor da primeira variável:")
