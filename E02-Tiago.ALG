@@ -1,11 +1,15 @@
 Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação] 
 // Autor(a)    : Tiago Oliveira
 Var
-  distancia, consumo: Real
+  numero1, numero2: inteiro
 Inicio
-escreval("Informe a distância em quilômetros")
-leia(distancia)
-escreval("Digite quantos litros de combustível foram gastos")
-leia(consumo)
-escreval("Média de consumo de combustível:", (distancia / consumo), " Km/l")
+escreval("Digite o primeiro número")
+leia(numero1)
+escreval("Digite o segundo número")
+leia(numero2)
+escreval("Resultado da soma:", (numero1+numero2))
+escreval("Resultado da subtração:", (numero1-numero2))
+escreval("Resultado da multiplicação:", (numero1*numero2))
+escreval("Resultado da divisão:", (numero1/numero2))
 Fimalgoritmo
