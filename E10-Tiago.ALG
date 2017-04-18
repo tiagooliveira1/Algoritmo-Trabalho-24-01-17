@@ -2,16 +2,18 @@ Algoritmo "semnome"
 // Disciplina   : [Linguagem e Lógica de Programação] 
 // Autor(a)    : Tiago Oliveira
 Var
-  valorVenda: Real
+  valorVenda, valorParcela: Real
   i: inteiro
 Inicio
 
 escreval("Informe o valor da venda:")
 leia(valorVenda)
-txJuro <- 0.07
+valorParcela <- valorVenda/5
 
-escreval("Valor juros recebidos no primeiro mês :", (valorDeposito*txJuro) )
-escreval("Montante obtido no primeiro mês :", (valorDeposito*(1+txJuro)) )
+para i de 1 ate 5 faca
+     escreval("Parcela ", i, ": " , valorParcela )
+
+fimpara
 
 
 Fimalgoritmo
