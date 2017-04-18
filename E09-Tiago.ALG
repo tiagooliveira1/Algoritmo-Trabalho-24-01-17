@@ -2,7 +2,7 @@ Algoritmo "semnome"
 // Disciplina   : [Linguagem e Lógica de Programação] 
 // Autor(a)    : Tiago Oliveira
 Var
-  txJuro, valorDeposito: Real
+  valorCusto, margemLucro: Real
 Inicio
 
 escreval("Informe o valor depositado:")
