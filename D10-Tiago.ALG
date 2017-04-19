@@ -28,7 +28,7 @@ senao
    fimse
 
 fimse
-escreval("O maior número é", menorNumero)
+escreval("O menor número é", menorNumero)
 
 
 Fimalgoritmo
