@@ -6,6 +6,8 @@ Var
   codigoAluno: inteiro
   alturaAluno: real
   pesoAluno: real
+  
+  numeroAlunos: inteiro
 
   maisAltoCodigo: inteiro
   maisAltoPeso, maisAltoAltura : real
@@ -19,6 +21,8 @@ Var
   menosPesoCodigo: inteiro
   menosPesoPeso, menosPesoAltura : real
   
+  totalPesoClientes, totalAlturaClientes: real
+  
 
 Inicio
 maisAltoAltura <- 0
@@ -26,6 +30,10 @@ menosAltoAltura <- 300 { inicializa com valor alto para nao precisar verificar s
 
 maisPesoPeso <- 0
 menosPesoPeso <- 1000
+
+numeroAlunos <- 0
+totalPesoClientes <- 0
+totalAlturaClientes <- 0
 
 
 escreval("Informe o se código de aluno:")
@@ -61,7 +69,9 @@ enquanto codigoAluno > 0 faca
             menosPesoPeso <- pesoAluno
             menosPesoAltura <- alturaAluno
          fimse
-         
+         numeroAlunos <- numeroAlunos+1
+         totalPesoClientes <- totalPesoClientes+pesoAluno
+         totalAlturaClientes <- totalAlturaClientes+alturaAluno
          escreval("Informe o se código de aluno:")
          leia(codigoAluno)
 
@@ -72,5 +82,8 @@ escreval("Aluno mais baixo:", menosAltoCodigo, " Altura: ", menosAltoAltura, " P
 
 escreval("Aluno mais pesado:", maisPesoCodigo, " Altura: ", maisPesoAltura, " Peso: ", maisPesoPeso)
 escreval("Aluno mais baixo:", menosPesoCodigo, " Altura: ", menosPesoAltura, " Peso: ", menosPesoPeso)
+
+escreval("Média de altura dos clientes:", (totalAlturaClientes/numeroAlunos))
+escreval("Média de peso dos clientes:", (totalPesoClientes/numeroAlunos))
 
 Fimalgoritmo
