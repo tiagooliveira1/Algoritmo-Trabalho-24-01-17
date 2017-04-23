@@ -15,7 +15,7 @@ alturaMenor <- 300 { inicializa com valor alto para nao precisar verificar se 0}
 para i de 1 ate 10 faca
      escreval("Informe o código do aluno:")
      leia(codigoAluno[i])
-     
+
      escreval("Informe sua altura:")
      leia(alturaAluno[i])
      { Verifica se aluno é o mais alto }
